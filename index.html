@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .container {
+            background-color: whitesmoke;
+            width: 100%;
+        }
+
+        .products {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 300px;
+            grid-gap: 2rem;
+            background-color: whitesmoke;
+            width: 100%;
+            margin: 0 auto;
+
+        }
+
+        .grid-item {
+            background-color: white;
+            padding: 20px;
+            text-align: center;
+            border-right: 1px solid gray;
+            border-left: 1px solid gray;
+            height: 250px;
+        }
+
+        .nav {
+            background-color: turquoise;
+            width: 100%;
+        }
+
+        .text {
+            width: auto;
+            padding: 20px;
+            text-align: center;
+            color: black;
+            background-color: whitesmoke;
+        }
+
+        .youtube {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: white;
+            width: 100%;
+
+        }
+
+        .footer {
+            width: 100%;
+            height: 100px;
+            background-color: white;
+            color: black;
+            margin-top: -15px;
+        }
+
+        .footer a {
+            color: black;
+        }
+
+        .footer ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .footer li a {
+            text-decoration: none;
+            float: right;
+            padding: 16px 20px;
+            font-size: large;
+        }
+
+        .footer a:hover {
+            color: rgb(104, 113, 241);
+        }
+
+
+        .selectbutton {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin: 0 auto;
+            background-color: rgb(104, 113, 241);
+            color: white;
+            height: 50px;
+            width: 100px;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        a:link {
+            text-decoration: none;
+        }
+
+        .selectbutton:hover {
+            background-color: black;
+            color: cornflowerblue;
+        }
+
+        h2 {
+            margin: -20px -20px 2px -20px;
+            padding: 10px;
+            text-align: center;
+            height: 50px;
+            background-color: whitesmoke;
+            color: rgb(104, 113, 241);
+        }
+
+        h3 {
+            text-align: center;
+            margin-bottom: 2px;
+            color: rgb(104, 113, 241);
+            font-size: larger;
+        }
+
+        .producttext {
+            font-size: large;
+            font-weight: lighter;
+        }
+
+        .nav ul {
+            list-style-type: none;
+            background-color: white;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            top: 0;
+            width: 100%;
+            font-size: 20px;
+        }
+
+        .nav li a {
+            display: block;
+            padding: 14px 16px;
+            color: black;
+            text-align: center;
+            text-decoration: none;
+        }
+
+        .nav li {
+            float: right;
+        }
+
+        .nav li :hover {
+            background: black;
+            color: cornflowerblue;
+            border-radius: 10px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="nav">
+            <ul>
+                <li><a href="features" target="_self">Features</a></li>
+                <li><a href="demo" target="_self">Demo</a></li>
+                <li><a href="price" target="_self">Pricing</a></li>
+                <li><a href="contact" target="_self">Contact us</a></li>
+                <li><a href="Returning customer" target="_self">Returning Customer</a></li>
+
+            </ul>
+        </div>
+        <div class="text">
+            <p>
+            <h1>Networking Devices</h1>
+            </p>
+            <p><label>
+                    <input type="text" name="email" placeholder="Input your email...."
+                        style="width: 300px; height: 30px;border:1px solid rgb(104, 113, 241) ">
+                    <p style="padding-bottom: 20px;">
+                        <input type="button" name="submit" value="submit" style="width: 100px; height: 30px; background-color: rgb(104, 113, 241);
+                        border: none; font-size: larger; font-weight: 700; color: white;">
+                </label>
+            <p>
+
+            <h3>Premium Materials</h3>
+            Our devices are direct from our the manufactering firms which we have direct partnership.
+            purchase.
+
+            <h3>Fast Shipping</h3>
+            We make sure you recieve your devices as soon as we conclude on the payment. We also provide free
+            returns if you are not satisfied.
+
+            <h3>Quality Assurance</h3>
+            For every purchase you make, we will ensure there are no damages or faults.
+        </div>
+        <div class="youtube"><iframe width="420" style="border:none" ; height="345"
+                src="https://www.youtube.com/embed/tgbNymZ7vqY">
+            </iframe></div>
+        <div class="products">
+            <div class="grid-item">
+                <h2> Servers</h2>
+                <p class="producttext">
+                    Centralizing critical information and making operations more effective through deploying the
+                    right
+                    server is an ideal solution for your business.<br>Our exclusive rack, blade and tower server
+                    solutions help industries to boost their application performance.
+
+                <div><a href="select" target="_self" class="selectbutton"> SELECT</a></div>
+            </div>
+            <div class="grid-item">
+                <h2>Monitors & Projectors</h2>
+                <p class="producttext">
+                    Avenue3 is where you’ll find every category of monitors & projectors along with experts that
+                    simplify network configuration and compliance.
+                <div><a href="select" target="_self" class="selectbutton"> SELECT</a></div>
+            </div>
+            <div class="grid-item">
+                <h2>Storage & Backup</h2>
+                <p class="producttext">
+                    Avenue3 is where you’ll find every category of storage & backup along with experts that simplify
+                    network configuration and compliance.
+                </p>
+                <div><a href="select" target="_self" class="selectbutton"> SELECT</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <ul>
+                <li><a href="privacy" target="_self"> Privacy</a></li>
+                <li><a href="terms" target="_self"> Terms</a></li>
+                <li><a href="contact" target="_self"> Contact</a></li>
+            </ul>
+            <p
+                style="color: black; padding-top:40px;padding-left: 20px; text-align: right; display: flex; flex-direction: row; justify-content: flex-start;">
+                Copyright West Africa Partner</p>
+
+        </div>
+
+    </div>
+</body>
+
+</html>
